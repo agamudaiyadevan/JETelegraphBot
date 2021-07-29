@@ -17,11 +17,22 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hello {message.from_user.first_name}!\n<b>I am Telegram to telegra.ph Image Uploader Bot</b>\n\n▷ Just send me a media under 5MB.\n▷ Then I will download it.\n▷ I will then upload it to the telegra.ph link.</b>""",   
-                            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="TENDKOTTA", url=f"https://telegram.me/tendkotta"), InlineKeyboardButton(text="TharamaanaMovies", url=f"https://telegram.me/tharamaanamovies"), ],
-                                           [InlineKeyboardButton(text="Youtube DL", url=f"https://telegram.me/YouTubedownloadergroup1"), InlineKeyboardButton(text="Channel List 📢", url=f"https://telegram.mr/tharamaanateambot"), InlineKeyboardButton(text="Bot Lists 🤖", url=f"https://telegram.me/tharamaanateambot"),],
-                                           [InlineKeyboardButton(text="🤖 Movie Request Bot 🤖", url=f"https://telegram.me/Movie_Request_v3_Robot")]])
-        ),        
+               text="""<b>Hey There, I'm Telegraph Bot
+
+I can upload photos or videos to telegraph. Made by @ImJanindu 🇱🇰
+
+Hit help button to find out more about how to use me</b>""",   
+                            reply_markup=InlineKeyboardMarkup(
+                                [[
+                                        InlineKeyboardButton(
+                                            "Help", callback_data="help"),
+                                        InlineKeyboardButton(
+                                            "Channel", url="https://t.me/Infinity_BOTs")
+                                    ],[
+                                      InlineKeyboardButton(
+                                            "Source Code", url="https://github.com/ImJanindu/JETelegraphBot")
+                                    ]]
+                            ),        
             disable_web_page_preview=True,        
             parse_mode="html")
 
@@ -43,7 +54,7 @@ Just send a photo or video less than 5mb file size, I'll upload it to telegraph.
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "🤖 Movie Request Bot 🤖", url="https://telegram.me/tharamaanateambot")
+                                            "Source Code", url="https://github.com/ImJanindu/JETelegraphBot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -56,19 +67,19 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b>About Telegraph Bot!</b>
 
-<b>♞ Developer:</b> <a href="https://telegram.me/tharamaanaadmin">Tharamaana Admin😎</a>
+<b>♞ Developer:</b> <a href="https://telegram.me/tharamaanaadmin">∪∩∩᭄_1997</a>
 
-<b>♞ Tharamaana Team:</b> <a href="https://telegram.me/tharamaanateambot">Channel & Bot List</a>
+<b>♞ Tharamaana Team:</b> <a href="https://Telegram.me/tharamaanateambot">List of Our Channels & Bots</a>
 
-<b>♞ TENDKOTTA ❤️:</b> <a href="https://telegram.me/tendkotta">Join Our Channel</a>
+<b>♞ Youtube Downloader:</b> <a href="https://telegram.me/YouTubedownloadergroup1">Youtube DL Group</a>
 
-<b>~ @tharamaanamovies</b>""",
+<b>~ @TharamaanaAdmin</b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="help"),
+                                            "TENDKOTTA ❤️", url="https://telegram.me/tendkotta"),
                                         InlineKeyboardButton(
-                                            "🤖 Movie Request Bot 🤖", url="https://telegram.me/movie_request_v3_robot")
+                                            "TharamaanaMovies", url="https://telegram.me/tharamaanamovies")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -84,7 +95,7 @@ async def telegraphphoto(client, message):
     except:
         await msg.edit_text("Photo size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n▷ https://telegra.ph{response[0]}\n\nJoin @tharamaanateambot**',
+        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @tharamaanateambot**',
             disable_web_page_preview=True,
         )
     finally:
@@ -100,7 +111,7 @@ async def telegraphvid(client, message):
     except:
         await msg.edit_text("Video size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n▷ https://telegra.ph{response[0]}\n\nJoin @tharamaanateambot**',
+        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @tharamaanateambot**',
             disable_web_page_preview=True,
         )
     finally:
@@ -116,10 +127,8 @@ async def telegraphgif(client, message):
     except:
         await msg.edit_text("Gif size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n▷ https://telegra.ph{response[0]}\n\nCreate By @TharamaanaAdmin😎**',
+        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @tharamaanateambot**',
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Open Link", url=f"https://telegra.ph{tlink[0]}"), InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://telegra.ph{tlink[0]}"), ],
-                                           [InlineKeyboardButton(text="🤖 Movie Request Bot 🤖", url="https://telegram.me/movie_request_v3_robot")]])
         )
     finally:
         os.remove(download_location)
@@ -140,7 +149,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @tharamaanateambot
+Join @TharamaanaTeamBot 🇮🇳
 """
 )
 
