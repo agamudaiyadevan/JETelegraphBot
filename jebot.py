@@ -25,12 +25,21 @@ Hit help button to find out more about how to use me</b>""",
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Channel List 📢", url="https://telegram.me/tharamaanateambot"),
+                                            "Back", callback_data="start"),
                                         InlineKeyboardButton(
-                                            "Bot List 🤖", url="https://telegram.me/tharamaanateambot")
-                                    ],[
-                                      InlineKeyboardButton(
-                                            "🤖 Movie Request Bot 🤖", url="https://telegram.me/movie_request_v3_robot")
+                                            "About", callback_data="about"),
+                                  ],[
+                                        InlineKeyboardButton(
+                                            "Back", callback_data="start"),
+                                        InlineKeyboardButton(
+                                            "Back", callback_data="start"),
+                                        InlineKeyboardButton(
+                                            "About", callback_data="about"),
+                                  ],[
+                                        InlineKeyboardButton(
+                                            "Back", callback_data="start"),
+                                        InlineKeyboardButton(
+                                            "Tharamaana Team bot", url="http://t.me/tharamaanateambot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -45,7 +54,7 @@ async def help(client, message):
 
 Just send a photo or video less than 5mb file size, I'll upload it to telegraph.
 
-~ @Infinity_BOTs</b>""",
+Maintained by @TharamaanaAdmin</b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -54,7 +63,7 @@ Just send a photo or video less than 5mb file size, I'll upload it to telegraph.
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Tharamaana Team bot", url="http://t.me/tharamaanateambot")
+                                            "🤖 Movie Request Bot 🤖", url="http://t.me/movie_request_v3_robot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -69,17 +78,15 @@ async def about(client, message):
 
 <b>♞ Developer:</b> <a href="https://telegram.me/tharamaanaadmin">∪∩∩᭄_1997</a>
 
-<b>♞ Tharamaana Team:</b> <a href="https://Telegram.me/tharamaanateambot">List of Our Channels & Bots</a>
+<b>♞ Tharamaana Team:</b> <a href="https://Telegram.me/tharamaanateambot">Click Here</a>
 
-<b>♞ Youtube Downloader:</b> <a href="https://telegram.me/YouTubedownloadergroup1">Youtube DL Group</a>
+<b>♞ YouTube Downloader Group:</b> <a href="https://telegram.me/YouTubedownloadergroup1">Click Here</a>
 
-<b>~ @TharamaanaAdmin</b>""",
+<b>Maintained by @TharamaanaAdmin</b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "TENDKOTTA ❤️", url="https://telegram.me/tendkotta"),
-                                        InlineKeyboardButton(
-                                            "TharamaanaMovies", url="https://telegram.me/tharamaanamovies")
+                                            "Back", callback_data="start")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
