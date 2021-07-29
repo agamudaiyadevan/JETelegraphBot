@@ -19,7 +19,9 @@ async def start(client, message):
                chat_id=message.chat.id,
                text= f"""Hello {message.from_user.first_name}, I'm Telegraph Bot
 
-I can upload photos or videos or gifs to telegraph.""",   
+▷ Just send me a photo or video under 5MB.
+▷ Then I will download it.
+▷ I will then upload it to the telegra.ph link.""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -48,9 +50,11 @@ async def help(client, message):
                chat_id=message.chat.id,
                text="""<b>Telegraph Bot Help!
 
-Just send a photo or video or gif less than 5mb file size, I'll upload it to telegraph.
+▷ Just send me a photo or video under 5MB.
+▷ Then I will download it.
+▷ I will then upload it to the telegra.ph link.
 
-**Maintained by** @TharamaanaAdmin</b>""",
+"**Tharamaana Admin**", url="http://t.me/TharamaanaAdmin"</b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -78,7 +82,7 @@ async def about(client, message):
 
 <b>♞ YouTube Downloader Group:</b> <a href="https://telegram.me/YouTubedownloadergroup1">Click Here</a>
 
-<b>Maintained by @TharamaanaAdmin</b>""",
+<b>"**Tharamaana Admin**", url="http://t.me/TharamaanaAdmin"</b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -98,7 +102,7 @@ async def telegraphphoto(client, message):
     except:
         await msg.edit_text("Photo size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @tharamaanateambot**',
+        await msg.edit_text(f'**Uploaded To Telegraph!\n\n▷ https://telegra.ph{response[0]}\n\nJoin @tharamaanateambot**',
             disable_web_page_preview=True,
         )
     finally:
@@ -152,7 +156,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-**Join** @TharamaanaTeamBot 🇮🇳
+"**Tharamaana Team Bot**", url="http://t.me/Tharamaanateambot" 🇮🇳
 """
 )
 
