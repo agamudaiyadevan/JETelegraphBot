@@ -17,29 +17,25 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm Telegraph Bot
+               text="""<b>Hello {message.from_user.first_name}, I'm Telegraph Bot
 
-I can upload photos or videos to telegraph. Create by @TharamaanaAdmin
-
-Hit help button to find out more about how to use me</b>""",   
+I can upload photos or videos or gifs to telegraph.</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="start"),
+                                            "TENDKOTTA", url="https://telegram.me/tendkotta"),
                                         InlineKeyboardButton(
-                                            "About", callback_data="about"),
+                                            "TharamaanaMovies", url="https://telegram.me/tharamaanamovies"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="start"),
+                                            "YouTube DL", url="https://telegram.me/YouTubedownloadergroup1"),
                                         InlineKeyboardButton(
-                                            "Back", callback_data="start"),
+                                            "Channel List 📢", url="https://telegram.me/tharamaanateambot"),
                                         InlineKeyboardButton(
-                                            "About", callback_data="about"),
+                                            "Bot List 🤖", url="https://telegram.me/tharamaanateambot"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="start"),
-                                        InlineKeyboardButton(
-                                            "Tharamaana Team bot", url="http://t.me/tharamaanateambot")
+                                            "🤖 Click Here To Movie Request 🤖", url="http://t.me/movie_request_v3_robot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -52,18 +48,18 @@ async def help(client, message):
                chat_id=message.chat.id,
                text="""<b>Telegraph Bot Help!
 
-Just send a photo or video less than 5mb file size, I'll upload it to telegraph.
+Just send a photo or video or gif less than 5mb file size, I'll upload it to telegraph.
 
 Maintained by @TharamaanaAdmin</b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="start"),
+                                            "Help", callback_data="help"),
                                         InlineKeyboardButton(
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "🤖 Movie Request Bot 🤖", url="http://t.me/movie_request_v3_robot")
+                                            "🤖 Click Here To Movie Request 🤖", url="http://t.me/movie_request_v3_robot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
