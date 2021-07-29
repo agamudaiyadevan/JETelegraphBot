@@ -17,7 +17,7 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text= f"""Hello {message.from_user.first_name}, I'm Telegraph Bot
+               text= f"""Hello {message.from_user.first_name},
 
 ▷ Just send me a photo or video under 5MB.
 ▷ Then I will download it.
