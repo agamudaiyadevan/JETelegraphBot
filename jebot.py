@@ -126,7 +126,7 @@ async def telegraphvid(client, message):
 
 @Jebot.on_message(filters.animation)
 async def telegraphgif(client, message):
-    msg = await message.reply_text(Uploading To Telegraph...")
+    msg = await message.reply_text("Uploading To Telegraph...")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
