@@ -19,18 +19,18 @@ async def start(client, message):
                chat_id=message.chat.id,
                text="""<b>Hey There, I'm Telegraph Bot
 
-I can upload photos or videos to telegraph. Made by @ImJanindu 🇱🇰
+I can upload photos or videos to telegraph. Create by @TharamaanaAdmin
 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Help", callback_data="help"),
+                                            "Channel List 📢", url="https://telegram.me/tharamaanateambot"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/Infinity_BOTs")
+                                            "Bot List 🤖", url="https://telegram.me/tharamaanateambot")
                                     ],[
                                       InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/JETelegraphBot")
+                                            "🤖 Movie Request Bot 🤖", url="https://telegram.me/movie_request_v3_robot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -54,7 +54,7 @@ Just send a photo or video less than 5mb file size, I'll upload it to telegraph.
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/JETelegraphBot")
+                                            "Tharamaana Team bot", url="http://t.me/tharamaanateambot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
