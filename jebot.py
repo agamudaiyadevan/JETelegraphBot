@@ -19,9 +19,9 @@ async def start(client, message):
                chat_id=message.chat.id,
                text= f"""Hello {message.from_user.first_name},
 
-<code>▷ Just send me a photo or video under 5MB.
+▷ Just send me a photo or video under 5MB.
 ▷ Then I will download it.
-▷ I will then upload it to the telegra.ph link.<code>""",   
+▷ I will then upload it to the telegra.ph link.""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -50,9 +50,9 @@ async def help(client, message):
                chat_id=message.chat.id,
                text="""<b>Telegraph Bot Help!
 
-<code>▷ Just send me a photo or video under 5MB.
+▷ Just send me a photo or video under 5MB.
 ▷ Then I will download it.
-▷ I will then upload it to the telegra.ph link.</code></b>
+▷ I will then upload it to the telegra.ph link.</b>
 
 <b>Maintained by :</b> <a href="https://telegram.me/tharamaanaadmin">∪∩∩᭄_1997</a>""",
         reply_markup=InlineKeyboardMarkup(
@@ -94,15 +94,15 @@ async def about(client, message):
 
 @Jebot.on_message(filters.photo)
 async def telegraphphoto(client, message):
-    msg = await message.reply_text("<code>Downloading to My Server ...</code>")
+    msg = await message.reply_text("Downloading to My Server ...")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
         response = upload_file(download_location)
     except:
-        await msg.edit_text("<code>Photo size should be less than 5mb!</code>") 
+        await msg.edit_text("Photo size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Get Your Link 👇\n\n🔅 <code>https://telegra.ph{response[0]}</code>,\n\n<b>▷ Please Subscribe</b> : [@TENDKOTTA](https://t.me/TENDKOTTA)**',
+        await msg.edit_text(f'**Get Your Link 👇\n\n🔅 https://telegra.ph{response[0]},\n\n<b>Please Subscribe</b> : [@TENDKOTTA](https://t.me/TENDKOTTA) 🇮🇳**',
             disable_web_page_preview=True,
         )
     finally:
@@ -110,15 +110,15 @@ async def telegraphphoto(client, message):
 
 @Jebot.on_message(filters.video)
 async def telegraphvid(client, message):
-    msg = await message.reply_text("<code>Downloading to My Server ...</code>")
+    msg = await message.reply_text("Downloading to My Server ...")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
         response = upload_file(download_location)
     except:
-        await msg.edit_text("<code>Video size should be less than 5mb!</code>") 
+        await msg.edit_text("Video size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Get Your Link 👇\n\n🔅 <code>https://telegra.ph{response[0]}</code>,\n\n<b>▷ Please Subscribe</b> : [@TENDKOTTA](https://t.me/TENDKOTTA)**',
+        await msg.edit_text(f'**Get Your Link 👇\n\n🔅 https://telegra.ph{response[0]},\n\n<b>Please Subscribe</b> : [@TENDKOTTA](https://t.me/TENDKOTTA) 🇮🇳**',
             disable_web_page_preview=True,
         )
     finally:
@@ -126,15 +126,15 @@ async def telegraphvid(client, message):
 
 @Jebot.on_message(filters.animation)
 async def telegraphgif(client, message):
-    msg = await message.reply_text(<code>Downloading to My Server ...</code>")
+    msg = await message.reply_text(Downloading to My Server ...")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
         response = upload_file(download_location)
     except:
-        await msg.edit_text("<code>Gif size should be less than 5mb!</code>") 
+        await msg.edit_text("Gif size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Get Your Link 👇\n\n🔅 <code>https://telegra.ph{response[0]}</code>,\n\n<b>▷ Please Subscribe</b> : [@TENDKOTTA](https://t.me/TENDKOTTA)**',
+        await msg.edit_text(f'**Get Your Link 👇\n\n🔅 https://telegra.ph{response[0]},\n\n<b>Please Subscribe</b> : [@TENDKOTTA](https://t.me/TENDKOTTA) 🇮🇳**',
             disable_web_page_preview=True,
         )
     finally:
