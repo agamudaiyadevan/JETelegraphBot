@@ -52,9 +52,9 @@ async def help(client, message):
 
 ▷ Just send me a photo or video under 5MB.
 ▷ Then I will download it.
-▷ I will then upload it to the telegra.ph link.</b>
+▷ I will then upload it to the telegra.ph link.
 
-<b>Maintained by :</b> <a href="https://telegram.me/tharamaanaadmin">∪∩∩᭄_1997</a>""",
+Maintained by : @TharamaanaAdmin</b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -82,7 +82,7 @@ async def about(client, message):
 
 <b>♞ YouTube Downloader Group:</b> <a href="https://telegram.me/YouTubedownloadergroup1">Click Here</a>
 
-<b>Maintained by :</b> <a href="https://telegram.me/tharamaanaadmin">∪∩∩᭄_1997</a>""",
+Maintained by : @TharamaanaAdmin""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -102,7 +102,7 @@ async def telegraphphoto(client, message):
     except:
         await msg.edit_text("Photo size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Get Your Link 👇\n\n🔅 https://telegra.ph{response[0]},\n\n<b>Please Subscribe</b> : [@TENDKOTTA](https://t.me/TENDKOTTA) 🇮🇳**',
+        await msg.edit_text(f'**Get Your Link 👇\n\n🔅 https://telegra.ph{response[0]},\n\nPlease Subscribe : @TENDKOTTA**',
             disable_web_page_preview=True,
         )
     finally:
@@ -118,7 +118,7 @@ async def telegraphvid(client, message):
     except:
         await msg.edit_text("Video size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Get Your Link 👇\n\n🔅 https://telegra.ph{response[0]},\n\n<b>Please Subscribe</b> : [@TENDKOTTA](https://t.me/TENDKOTTA) 🇮🇳**',
+        await msg.edit_text(f'**Get Your Link 👇\n\n🔅 https://telegra.ph{response[0]},\n\nPlease Subscribe : @TENDKOTTA**',
             disable_web_page_preview=True,
         )
     finally:
@@ -134,7 +134,7 @@ async def telegraphgif(client, message):
     except:
         await msg.edit_text("Gif size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Get Your Link 👇\n\n🔅 https://telegra.ph{response[0]},\n\n<b>Please Subscribe</b> : [@TENDKOTTA](https://t.me/TENDKOTTA) 🇮🇳**',
+        await msg.edit_text(f'**Get Your Link 👇\n\n🔅 https://telegra.ph{response[0]},\n\nPlease Subscribe : @TENDKOTTA**',
             disable_web_page_preview=True,
         )
     finally:
@@ -156,7 +156,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-<b>Create by :</b> <a href="https://telegram.me/tharamaanaadmin">∪∩∩᭄_1997</a>
+Create by : @TharamaanaAdmin
 """
 )
 
