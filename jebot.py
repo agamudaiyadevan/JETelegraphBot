@@ -17,7 +17,7 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text= f"""Hello {m.from_user.mention(style='md')}, I'm Telegraph Bot
+               text= f"""Hello {message.from_user.first_name}, I'm Telegraph Bot
 
 I can upload photos or videos or gifs to telegraph.""",   
                             reply_markup=InlineKeyboardMarkup(
