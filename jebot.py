@@ -19,9 +19,9 @@ async def start(client, message):
                chat_id=message.chat.id,
                text= f"""Hello {message.from_user.first_name},
 
-▷ Just send me a photo or video under 5MB.
+`▷ Just send me a photo or video under 5MB.
 ▷ Then I will download it.
-▷ I will then upload it to the telegra.ph link.""",   
+▷ I will then upload it to the telegra.ph link.`""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -50,11 +50,11 @@ async def help(client, message):
                chat_id=message.chat.id,
                text="""<b>Telegraph Bot Help!
 
-▷ Just send me a photo or video under 5MB.
+`▷ Just send me a photo or video under 5MB.
 ▷ Then I will download it.
-▷ I will then upload it to the telegra.ph link.
+▷ I will then upload it to the telegra.ph link.`</b>
 
-"**Tharamaana Admin**", url="http://t.me/TharamaanaAdmin"</b>""",
+<b>Maintained by :</b> <a href="https://telegram.me/tharamaanaadmin">∪∩∩᭄_1997</a>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -82,7 +82,7 @@ async def about(client, message):
 
 <b>♞ YouTube Downloader Group:</b> <a href="https://telegram.me/YouTubedownloadergroup1">Click Here</a>
 
-<b>"**Tharamaana Admin**", url="http://t.me/TharamaanaAdmin"</b>""",
+<b>Maintained by :</b> <a href="https://telegram.me/tharamaanaadmin">∪∩∩᭄_1997</a>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -94,15 +94,15 @@ async def about(client, message):
 
 @Jebot.on_message(filters.photo)
 async def telegraphphoto(client, message):
-    msg = await message.reply_text("Uploading To Telegraph...")
+    msg = await message.reply_text("`Downloading to My Server ...`")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
         response = upload_file(download_location)
     except:
-        await msg.edit_text("Photo size should be less than 5mb!") 
+        await msg.edit_text("`Photo size should be less than 5mb!`") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n▷ https://telegra.ph{response[0]}\n\nJoin @tharamaanateambot**',
+        await msg.edit_text(f'**Uploaded To Telegraph!\n\n▷ `https://telegra.ph{response[0]}`**',
             disable_web_page_preview=True,
         )
     finally:
@@ -110,15 +110,15 @@ async def telegraphphoto(client, message):
 
 @Jebot.on_message(filters.video)
 async def telegraphvid(client, message):
-    msg = await message.reply_text("Uploading To Telegraph...")
+    msg = await message.reply_text("`Downloading to My Server ...`")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
         response = upload_file(download_location)
     except:
-        await msg.edit_text("Video size should be less than 5mb!") 
+        await msg.edit_text("`Video size should be less than 5mb!`") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @tharamaanateambot**',
+        await msg.edit_text(f'**Uploaded To Telegraph!\n\n▷ `https://telegra.ph{response[0]}`**',
             disable_web_page_preview=True,
         )
     finally:
@@ -126,15 +126,15 @@ async def telegraphvid(client, message):
 
 @Jebot.on_message(filters.animation)
 async def telegraphgif(client, message):
-    msg = await message.reply_text("Uploading To Telegraph...")
+    msg = await message.reply_text(`Downloading to My Server ...`")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
         response = upload_file(download_location)
     except:
-        await msg.edit_text("Gif size should be less than 5mb!") 
+        await msg.edit_text("`Gif size should be less than 5mb!`") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @tharamaanateambot**',
+        await msg.edit_text(f'**Uploaded To Telegraph!\n\n▷ `https://telegra.ph{response[0]}`**',
             disable_web_page_preview=True,
         )
     finally:
@@ -156,7 +156,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-"**Tharamaana Team Bot**", url="http://t.me/Tharamaanateambot" 🇮🇳
+<b>Create by :</b> <a href="https://telegram.me/tharamaanaadmin">∪∩∩᭄_1997</a>
 """
 )
 
