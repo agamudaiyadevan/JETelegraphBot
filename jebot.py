@@ -94,7 +94,7 @@ async def about(client, message):
 
 @Jebot.on_message(filters.photo)
 async def telegraphphoto(client, message):
-    msg = await message.reply_text("Downloading to My Server ...")
+    msg = await message.reply_text("Uploading To Telegraph...")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -110,7 +110,7 @@ async def telegraphphoto(client, message):
 
 @Jebot.on_message(filters.video)
 async def telegraphvid(client, message):
-    msg = await message.reply_text("Downloading to My Server ...")
+    msg = await message.reply_text("Uploading To Telegraph...)
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -126,7 +126,7 @@ async def telegraphvid(client, message):
 
 @Jebot.on_message(filters.animation)
 async def telegraphgif(client, message):
-    msg = await message.reply_text(Downloading to My Server ...")
+    msg = await message.reply_text(Uploading To Telegraph...")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
