@@ -17,9 +17,9 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hello {message.from_user.first_name}, I'm Telegraph Bot
+               text= f"""Hello {m.from_user.mention(style='md')}, I'm Telegraph Bot
 
-I can upload photos or videos or gifs to telegraph.</b>""",   
+I can upload photos or videos or gifs to telegraph.""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -50,7 +50,7 @@ async def help(client, message):
 
 Just send a photo or video or gif less than 5mb file size, I'll upload it to telegraph.
 
-Maintained by @TharamaanaAdmin</b>""",
+**Maintained by** @TharamaanaAdmin</b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -152,7 +152,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @TharamaanaTeamBot 🇮🇳
+**Join** @TharamaanaTeamBot 🇮🇳
 """
 )
 
